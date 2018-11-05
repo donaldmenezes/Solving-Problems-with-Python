@@ -5,7 +5,7 @@ def is_multiple(n, m):
     '''
     try :
         return int(m) % int(n) == 0
-    except Value Error:
+    except ValueError:
         return ("the two numbers should be integer values")
         
 
