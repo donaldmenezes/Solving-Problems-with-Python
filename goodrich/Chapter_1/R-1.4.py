@@ -10,7 +10,8 @@ def sum_of_squares(num):
         
     return sum(empty_list)
     
-num = int(input('Enter a positive number: ')
+num = int(input('Enter a positive number: '))
+
 if num <= 0:
     print('the number entered is negative')
 else:
