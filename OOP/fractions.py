@@ -93,3 +93,6 @@ class Fraction(object):
 
     def __iadd__(self,other):
         return __add__(other)
+
+    def __repr__(self):
+        return str(self.num)+"/"+str(self.den)
