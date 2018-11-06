@@ -13,3 +13,9 @@ def elementwise_greater_than(L, thresh):
         else :
             a.append(False)
     return a
+
+# def elementwise_greater_than(L, thresh):
+#     res = []
+#     for ele in L:
+#         res.append(ele > thresh)
+#     return res
