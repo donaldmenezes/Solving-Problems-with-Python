@@ -17,3 +17,4 @@ def word_search(documents, keyword):
         if keyword.lower() in normalized:
             indices.append(i)
     return indices
+
