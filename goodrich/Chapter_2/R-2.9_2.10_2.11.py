@@ -47,5 +47,21 @@ class Vector:
         return self.__add__(other)
         #return Vector(other + self.coords)
         
+    def __mul__(self, factor):
+        if isinstance(factor, Vector):
+            if len(self) != len(factor):
+                raise ValueError("dimensions must agree")
+            else:
+                length = len(self)
+                result = Vector(len(self))
+                for i in range(length):
+                    result[i] = self[i] * factor[i]
+                return result
+        else:    
+            result = Vector(len(self))
+            for i in range(len(self)):
+                result[i] = self[i] * factor
+            return result
+    
     def __rmul__(self, other):
         return self.__mul__(other)
