@@ -46,3 +46,6 @@ class Vector:
     def __radd__(self, other):
         return self.__add__(other)
         #return Vector(other + self.coords)
+        
+    def __rmul__(self, other):
+        return self.__mul__(other)
