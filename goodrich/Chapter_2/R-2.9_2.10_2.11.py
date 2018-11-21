@@ -42,3 +42,7 @@ class Vector:
         for j in range(len(self)):
             result[j] = -self[j]
         return result
+    
+    def __radd__(self, other):
+        return self.__add__(other)
+        #return Vector(other + self.coords)
