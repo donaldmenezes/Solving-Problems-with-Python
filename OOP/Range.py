@@ -3,9 +3,9 @@ class Range:
     def __init__(self, start, stop = None, step = 1):
         
         if step == 0:
-            raise ValueError ('step cannot be zero
+            raise ValueError ('step cannot be zero)
         
-        if stop = None:
+        if stop == None:
             stop = start
             start = 0
         
